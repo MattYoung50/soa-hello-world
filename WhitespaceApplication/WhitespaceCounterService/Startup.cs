@@ -25,7 +25,7 @@ namespace WhitespaceRemovalService
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddCors();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -44,6 +44,12 @@ namespace WhitespaceRemovalService
             }
 
             app.UseRouting();
+
+            app.UseCors(builder => builder
+               .WithOrigins("http://127.0.0.1:8000", "http://192.168.1.127:8000")
+               .AllowAnyMethod()
+               .AllowCredentials()
+               .WithHeaders("Accept", "Content-Type", "Origin", "X-My-Header"));
 
             app.UseAuthorization();
 
