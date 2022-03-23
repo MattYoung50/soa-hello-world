@@ -2,7 +2,7 @@ import http.server
 import socketserver
 import webbrowser
 
-IP = "192.168.1.127"
+IP = "127.0.0.1"
 PORT = 8000
 URL = "http://" + IP + ":" + str(PORT)
 

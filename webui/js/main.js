@@ -1,5 +1,5 @@
-let WHITESPACE_REMOVAL_SERVICE_URL = 'http://192.168.1.127:5000/WhitespaceRemovalService/'
-let WHITESPACE_COUNTER_SERVICE_URL = 'http://192.168.1.127:5001/WhitespaceCounterService/'
+let WHITESPACE_REMOVAL_SERVICE_URL = 'http://127.0.0.1:5000/WhitespaceRemovalService/'
+let WHITESPACE_COUNTER_SERVICE_URL = 'http://127.0.0.1:5001/WhitespaceCounterService/'
 
 function GetWhitespaceResult() {
     var inputString = document.getElementById("inputString").value;
