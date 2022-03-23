@@ -8,15 +8,21 @@
 3. `whitespace-counter-service` - responsible for receiving strings with whitespace and returning a response with the number of whitespace characters in the string 
 
 # Usage
-1. Running webui (Hosts web page and opens in browser)
-   1. `cd webui`
-   2. `python server.py`
-2. Running WhitespaceRemovalService
-   1. `cd WhitespaceApplication/WhitespaceRemovalService`
-   2. `dotnet run`
-3. Running WhitespaceCounterService
-   1. `cd WhitespaceApplication/WhitespaceCounterService`
-   2. `dotnet run`
+### Running webui (Hosts web page and opens in browser)
+```console
+    $ cd webui
+    $ python server.py
+```
+### Running WhitespaceRemovalService
+```console
+    $ cd WhitespaceApplication/WhitespaceRemovalService
+    $ dotnet run
+```
+### Running WhitespaceCounterService
+```console
+    $ cd WhitespaceApplication/WhitespaceCounterService
+    $ dotnet run
+```
 # Some Example API Calls
 - `httprepl http://localhost:5000`
 - `curl http://localhost:5000/WhitespaceRemovalService/{some%20String} -v`
