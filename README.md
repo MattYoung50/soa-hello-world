@@ -10,7 +10,7 @@
 # Usage
 1. Running webui (Hosts web page and opens in browser)
    1. `cd webui`
-   2. `python3 server.py`
+   2. `python server.py`
 2. Running WhitespaceRemovalService
    1. `cd WhitespaceApplication/WhitespaceRemovalService`
    2. `dotnet run`
