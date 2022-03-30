@@ -1,6 +1,6 @@
 # Dependencies
 1. Install [python3](https://www.python.org/downloads/)
-2. Install the [.NET SDK 5.0](https://dotnet.microsoft.com/en-us/download/dotnet/5.0)
+2. Install the [.NET SDK 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 
 # Contents
 1. `webui` - contains the web page and web server scripts
